@@ -7,11 +7,47 @@ import EducationInfo from './components/EducationInfo'
 import ExperienceInfo from './components/ExperienceInfo'
 
 class App extends Component {
+
+  handleOnTextChange = (e) => {
+    const inputId = e.target.id;
+    const inputText = e.target.value;
+
+    switch (inputId)
+    {
+      case 'firstname':
+        console.log("First name input being changed");
+        break;
+      case 'lastname':
+        console.log("Last name input being changed");
+        break;
+      case 'email':
+        console.log("Email input being changed");
+        break;
+    }
+  }
+
+  handleOnEmailChange = (e) => {
+
+  }
+
+  handleOnDateChange = (e) => {
+
+  }
+
+  handleOnAddEducation = () => {
+
+  }
+
+  handleOnAddExperience = () => {
+
+  }
+
+
   render () {
     return (
       <div id="main">
         <div id="information">
-          <MainInfo />
+          <MainInfo onChange={this.handleOnTextChange}/>
           <EducationInfo />
           <ExperienceInfo />
         </div>
