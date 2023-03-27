@@ -9,10 +9,17 @@ import ExperienceInfo from './components/ExperienceInfo'
 class App extends Component {
   render () {
     return (
-      <div id="mainApp">
-        <MainInfo />
-        <EducationInfo />
-        <ExperienceInfo />
+      <div id="main">
+        <div id="information">
+          <MainInfo />
+          <EducationInfo />
+          <ExperienceInfo />
+        </div>
+
+        <div id="preview">
+          Hello There
+        </div>
+
       </div>
     )
   }
