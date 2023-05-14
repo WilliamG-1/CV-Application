@@ -2,24 +2,16 @@ import { Component } from 'react'
 
 export default class EducationInfo extends Component {
 
-    constructor (props) {
+    constructor(props) {
         super(props);
-        this.state = {
-            education : [] ,
 
-            educationInfo : {
-                schooName: "",
-                title: "",
-                beginDate: "yyyy-mm-dd",
-                endDate: "yyyy-mm-dd"
-            }
-        }
     }
-    handleOnChangeDate = (e) => { 
+    handleOnChangeDate = (e) => {
+
         console.log(e.target.value);
     }
 
-    render () {
+    render() {
         return (
             <div id="educationInfo">
                 <h2> Education </h2>

@@ -1,7 +1,7 @@
-import { Component} from 'react'
+import { Component } from 'react'
 
 export default class MainInfo extends Component {
-    
+
     constructor(props) {
         super(props)
 
@@ -10,7 +10,7 @@ export default class MainInfo extends Component {
         }
     }
 
-    render () {
+    render() {
         return (
             <div id="mainInformation">
                 <h2> Personal Information </h2>
